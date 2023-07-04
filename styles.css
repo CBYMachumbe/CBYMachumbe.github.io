@@ -117,6 +117,17 @@ a {
   grid-template-columns: 0.3fr 1fr;
   gap: 2rem;
   margin-top: 30px;
+  padding: 15px 10px;
+  border: 1px solid transparent;
+}
+
+.timeline-item:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.3px);
+  -webkit-backdrop-filter: blur(1.3px);
+  border: 1px solid rgba(255, 255, 255, 0.11);
 }
 
 .timeline-item h3 {
@@ -130,8 +141,6 @@ a {
   color: var(--clr-light-gray);
   text-align: center;
 }
-
-
 
 .projects {
   padding: 20px;
@@ -161,7 +170,7 @@ a {
         grid-template-columns: repeat(4, 1.5fr);
         gap: 0.3rem;
     }
-    
+
     .col-span-2 {
         grid-column: span 2; 
     }
@@ -187,6 +196,10 @@ a {
 
   .social-link a img {
     width: 25px;
+  }
+
+  .timeline-item {
+    gap: .5rem;
   }
 
   .tech {
